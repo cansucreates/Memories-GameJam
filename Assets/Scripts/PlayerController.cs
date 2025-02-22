@@ -3,6 +3,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     void Update()
     {
@@ -10,6 +16,6 @@ public class PlayerController : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
 
         Vector3 moveDirection = transform.right * moveX + transform.forward * moveZ;
-        transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
+        rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.deltaTime); 
     }
 }

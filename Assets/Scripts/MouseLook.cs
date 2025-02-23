@@ -11,13 +11,13 @@ public class MouseLook : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Confined; // Lock the cursor to the game window
         Cursor.visible = true; // Show the cursor
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(1)) {
+        if (Input.GetMouseButton(1))
+        {
             Cursor.lockState = CursorLockMode.Locked; // Lock the cursor to the center of the screen
             Cursor.visible = false; // Hide the cursor
 
@@ -31,10 +31,10 @@ public class MouseLook : MonoBehaviour
 
             transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f); // Rotate the camera vertically
         }
-        else {
+        else
+        {
             Cursor.lockState = CursorLockMode.None; // Unlock the cursor
             Cursor.visible = true; // Show the cursor
         }
-        
     }
 }

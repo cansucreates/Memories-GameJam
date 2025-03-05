@@ -1,32 +1,35 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class StartMenu : MonoBehaviour
 {
-    public GameObject startMenu;
-    public TextMeshProUGUI gameTitle;
-    public Button startButton;
+    public GameObject startMenu; // Assign StartMenu panel
+    public Button startButton; // Assign Start button
+    public IntroTextManager introTextManager; // Assign IntroTextManager script
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if (startMenu != null)
-        {
-            startMenu.SetActive(true);
+            startMenu.SetActive(true); // Ensure start menu is visible at the beginning
+
+        if (startButton != null)
             startButton.onClick.AddListener(StartGame);
-        }
     }
 
     void StartGame()
     {
         if (startMenu != null)
+            startMenu.SetActive(false); // Hide start menu
+
+        if (introTextManager != null)
         {
-            startMenu.SetActive(false);
+            Debug.Log("Starting intro text...");
+            introTextManager.StartIntroText();
         }
-
-        Time.timeScale = 1f;
-
-        Debug.Log("Game Started!");
+        else
+        {
+            Debug.LogError("IntroTextManager is not assigned in StartMenu!");
+        }
     }
 }

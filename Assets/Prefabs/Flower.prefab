@@ -181,6 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8278330286776417618}
+  - component: {fileID: 3910127522983322691}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -232,6 +233,27 @@ Transform:
   - {fileID: 4482750777713163313}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3910127522983322691
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669418562055502820}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.20593548, y: 0.49504268, z: 0.18778491}
+  m_Center: {x: 0.63507605, y: 0.62405175, z: -0.85449445}
 --- !u!1 &684166706513571305
 GameObject:
   m_ObjectHideFlags: 0

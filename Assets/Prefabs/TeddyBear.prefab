@@ -181,6 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114467263582836078}
+  - component: {fileID: 6991738053490159396}
   m_Layer: 0
   m_Name: TeddyBear
   m_TagString: Untagged
@@ -206,6 +207,27 @@ Transform:
   - {fileID: 7574831379013746254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -79.167, y: 327.138, z: -21.96}
+--- !u!65 &6991738053490159396
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111786958434479374}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2876091, y: 0.38946623, z: 0.12236546}
+  m_Center: {x: -2.859363, y: 2.283706, z: 2.5185664}
 --- !u!1 &3914242003983943129
 GameObject:
   m_ObjectHideFlags: 0

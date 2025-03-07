@@ -100,6 +100,7 @@ public class PlayerInteraction : MonoBehaviour
         if (currentItem != null)
         {
             currentItem.gameObject.SetActive(false);
+            GameManager.Instance.CollectItem(); // Notify GameManager when an item is picked up
         }
         if (interactionPanel != null)
         {
